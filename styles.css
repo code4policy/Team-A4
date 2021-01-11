@@ -165,3 +165,31 @@ img {
  color: black;
 }
 
+/* styles for the body of the site */
+
+body {
+  font: 10px sans-serif;
+}
+
+.chart .axis path,
+.chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.chart .line {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.5px;
+}
+
+.chart .overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.chart .focus circle {
+  fill: none;
+  stroke: black;
+}
