@@ -46,14 +46,13 @@ body {
   text-align: center;
 }
 
-.container_black {
+.container_black_flex {
+  
   display: flex;
   text-align: center;
   
 }
 
-
-        } 
 
 /* styles for headline */
 #maintitle {
