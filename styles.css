@@ -1,6 +1,45 @@
 /* Note all colors with # taken from https://www.w3schools.com/cssref/css_colors.asp */
 
 
+
+
+ .polaroid a {
+        background: #ffffff;
+        display: inline-block;
+        margin: 55px 75px 30px;
+        padding: 15px 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        -webkit-transition: all .20s linear;
+        -moz-transition: all .20s linear;
+        transition: all .20s linear;
+        z-index: 0;
+        position: relative;
+      }
+      .polaroid a:after {
+        color: #333;
+        font-size: 25px;
+        content: attr(title);
+        position: relative;
+        top: 15px;
+      }
+      .polaroid img {
+        display: block;
+        width: 250px;
+      }
+      .polaroid a:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+        z-index: 10;
+        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+        -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      }
+
 /* Set background */
 html {
   background-color: whitesmoke;
@@ -54,7 +93,7 @@ a:hover,a:active {
   transform: translate(-50%, -50%);
 }
 
-/* style for box shadow - adapted from https://www.w3schools.com/howto/howto_css_image_text.asp*/
+/* style for box shadow - adapted from https://www.w3schools.com/howto/howto_css_image_text.asp */
 .box_shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -66,7 +105,7 @@ a:hover,a:active {
   color: white;
 }
 
-/* styles for polaroid cards*/
+/* styles for polaroid cards
 .polaroid {
   width: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -75,7 +114,7 @@ a:hover,a:active {
 
 .container_black_flex {
   display: flex;
-  text-align: center;
+  text-align: center; */
 }
 
 
