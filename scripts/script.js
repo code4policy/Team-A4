@@ -103,8 +103,8 @@ drawLineChart('#emerging_space_companies');
 
 
 /* Table */
-/* If it won't work, delete the following lines */
 
+/* Phase1 */
 d3.text("data/Phase1.csv", function(data) {
     var parsedCSV = d3.csv.parseRows(data);
 
@@ -120,5 +120,6 @@ d3.text("data/Phase1.csv", function(data) {
             .append("td")
             .text(function(d) { return d; });
 });
+
 
 

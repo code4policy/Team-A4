@@ -17,7 +17,6 @@ body {
 }
 
 /* styles for the table of the site */
-/* If it won't work, delete the following 4 lines */
 table {
   border-collapse: collapse;
   border: 2px black solid;
