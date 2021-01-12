@@ -24,6 +24,8 @@ table {
 }
 
 
+
+
 /* style for text over image - adapted from https://www.w3schools.com/howto/howto_css_image_text.asp*/
 .text_over_image {
   font-size:10vh;
@@ -54,11 +56,18 @@ table {
 }
 
 .container_black_flex {
-  
   display: flex;
   text-align: center;
-  
 }
+
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+  }
 
 
 /* styles for headline */
