@@ -150,27 +150,15 @@ a:hover, a:active {
 /* styles for headline */
 #maintitle {
   color: white;
-  font-size:50px;
+  font-size:60px;
   font-weight:bold
 }
 
 /* styles for subheadline */
 #mainsubtitle{
  color: black;
-  font-size:40px;
+  font-size:50px;
   font-weight:bold
-}
-
-/* styles for mainintro [Source for colors of box-shadow: https://www.w3schools.com/css/css3_shadows_box.asp]*/
-#mainintro{
-  padding: 10px;
-  background-color: #FFFAF0;
-  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* styles for mainoutro*/
-#mainoutro {
-  color: black;
 }
 
 
@@ -202,47 +190,30 @@ img {
 /* styles for sectiontitle */
 .sectiontitle{
   color: black;
-  font-size:30px;
+  font-size:40px;
   font-weight:bold
 }
 
 /* styles for sectionsubtitle */
 .sectionsubtitle {
   color: black;
-  font-size:20px;
+  font-size:30px;
   font-style:italic;	
 }
 
 
-/* styles for sectionintro */
-.sectionintro {
+/* styles for body */
+body, .sectionintro, .issueintro, .issuetext, .graphintro, .sectionoutro{
  color: black;
+ font-size:20px 
 }
 
 
 /* styles for issuetitle */
 .issuetitle {
   color: black;
-  font-size:16px;
+  font-size:20px;
   font-style:italic;
-}
-
-/* styles for issueintro */
-.issueintro {
-
- color: black;
-}
-
-/* styles for issuetext */
-.issuetext {
-
- color: black;
-}
-
-/* styles for graphintro */
-.graphintro {
-
- color: black;
 }
 
 
@@ -250,18 +221,6 @@ img {
 .graphsubtext {
 
  color: darkgrey;
-}
-
-/* styles for sectionoutro*/
-.sectionoutro {
-
- color: black;
-}
-
-/* styles for the body of the site */
-
-body {
-  font: 10px sans-serif;
 }
 
 .chart .axis path,
