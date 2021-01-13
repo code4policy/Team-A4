@@ -56,12 +56,35 @@ body {
 }
 
 /* styles for the table of the site */
-table {
+table{
+  width: 100%;
   border-collapse: collapse;
-  border: 2px black solid;
-  font: 12px sans-serif;
+  font-size:150%;
 }
 
+table th{
+  background-image: linear-gradient(40deg, #05081E 0%, #28368C 74%);
+  text-align: center;
+  border: solid 2px #fff;
+  color: white ;
+  padding: 10px 0;
+}
+
+table th.one{
+  width: 15%;
+}
+table th.two{
+  width: 20%;
+}
+
+
+table td{
+  background-image: linear-gradient(40deg, #DBD8DA 0%, #FAF6F9 74%);
+  text-align: center;
+  border: solid 2px #fff;
+  color: #1B191A;
+  padding: 10px 0;
+}
 
 
 /* styles visited and unvisited link */
