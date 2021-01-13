@@ -1,7 +1,7 @@
 /* Note all colors with # taken from https://www.w3schools.com/cssref/css_colors.asp */
 
 
-
+/* Styles for navigation in polaroid view */
 
  .polaroid a {
         background: #ffffff;
@@ -64,7 +64,6 @@ table {
 
 
 
-
 /* styles visited and unvisited link */
 a:link, a:visited {
   text-decoration: none;
@@ -82,11 +81,9 @@ a:hover,a:active {
 
 
 
-
-
 /* style for text over image - adapted from https://www.w3schools.com/howto/howto_css_image_text.asp*/
 .text_over_image {
-  font-size:10vh;
+  font-size:5vh;
   position: absolute;
   top: 50%;
   left: 50%;
