@@ -6,7 +6,7 @@
  .polaroid a {
         background: #ffffff;
         display: inline-block;
-        margin: 55px 75px 30px;
+        margin: 10px 20px 5px;
         padding: 15px 15px 30px;
         text-align: center;
         text-decoration: none;
@@ -21,14 +21,14 @@
       }
       .polaroid a:after {
         color: #333;
-        font-size: 25px;
+        font-size: 15px;
         content: attr(title);
         position: relative;
-        top: 15px;
+        top: 10px;
       }
       .polaroid img {
         display: block;
-        width: 250px;
+        max-width: 200px;
       }
       .polaroid a:hover {
         -webkit-transform: scale(1.2);
@@ -47,7 +47,7 @@ html {
 
 /* styles for the body of the site */
 body {
-  width: 85%;
+  width: 90%;
   background-color: white;
   padding: 20px 40px 40px 40px;
   margin-top: auto;
@@ -125,26 +125,6 @@ a:hover,a:active {
   color: white;
 }
 
-/* styles for polaroid cards
-.polaroid {
-  width: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-}
-
-.container_black_flex {
-  display: flex;
-  text-align: center; */
-}
-
-
-a:link, a:visited {
-  text-decoration: none;
-}
-
-a:hover, a:active {
-  text-decoration: underline;
-  }
 
 
 /* styles for headline */
@@ -219,7 +199,6 @@ body, .sectionintro, .issueintro, .issuetext, .graphintro, .sectionoutro{
 
 /* styles for graphsubtext */
 .graphsubtext {
-
  color: darkgrey;
 }
 
