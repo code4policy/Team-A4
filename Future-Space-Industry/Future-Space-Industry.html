@@ -43,7 +43,7 @@
     	
 	<p class="sectionintro">Morgan Stanley predicts that the industry will be going to 1.1 trillion dollars in 2040. Bank of America Merrill Lynch is more ambitious, projecting 1.4 trillion-dollar market size in 2030.</p>
 
-	<img src="images/ms_prediction.png" alt="Projection of Morgan Stanley">
+	<img src="../images/ms_prediction.png" alt="Projection of Morgan Stanley">
 
 	<p class="sectionsubtitle">Future Section Issues</p>
 	<ol>
@@ -53,6 +53,14 @@
 		</ol>
 
 	<p class="issuetitle" id="broadband">1. The demand of broadband rose historically with room to rise further </p>
+
+		<p class = "issueintro">The global internet penetration will rise as some regions that have not signed up for the internet well will start to use the internet. This trend will significantly increase the demand of broadband. Though the Internet use has matured in North America and Europe, South Asia and Sub-Saharan Africa have a huge potential to increase the number of people using the Internet.</p>
+
+		<img src="../images/wdi_internet_penetration.png" alt="Internet penetration by wdi">
+
+
+		<iframe title="Individuals using the Internet (% of population) in 2019" aria-label="Map" id="datawrapper-chart-FtCw2" src="https://datawrapper.dwcdn.net/FtCw2/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="524"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+		</script>
 
 		<p class = "issueintro">The global internet penetration rose siginificantly from 2009 to 2019 (compare graphs). Though the Internet use has matured in North America and Europe, South Asia and Sub-Saharan Africa have a huge potential to increase the number of people using the Internet.</p>
 
@@ -67,13 +75,14 @@
 
 		<p class = "issueintro">Public spending on space will grow for national security reason. The magnitude would be modest compared with the private sector, constrained by the budget constraint. The prediction by Morgan Stanley shows that the United States would continue to be the largest contributor, while China would increase its presence.</p>
 
-		<img src="images/ms_public_spending.png" alt="Projection of Public Spending by Morgan Stanley">
+		<img src="../images/ms_public_spending.png" alt="Projection of Public Spending by Morgan Stanley">
 
 
 	<p class="issuetitle" id="cost-of-access">2. The cost of access to space will fall</p>
 
 		<p class = "issueintro">The cost of satellite manufacturing and launching has fallen in the past decade due to the invention of very small satellites. This trend is expected to continue in the future due to the launcher companies’ development, pushed by fierce competition.　The graph below is the prediction by PwC showing that the launch of small satellites will rise in the next decades.</p>
 
+		<div class="chart" id="launch_cost"></div>
 		<div class="chart" id="pwc_satellite"></div>
 		
 		<p class = "issuetext">Reusable rocket that can land and relaunch, and modular launch system that can enable mass production of rocket are potential R&D areas to reduce the cost significantly. Also, The use of liquid oxygen and methane as propellants would contribute to simpler and lighter launcher and reusable-friendly engines and easier storage.</p>
@@ -94,12 +103,13 @@
 
  <!-- Loading Javascript -->
 
-	<script src="//d3js.org/d3.v3.min.js"></script>
-	<script src="scripts/script.js" type="text/javascript"></script>
 
-	<script src="//d3js.org/d3.v3.min.js"></script>
-	<script src="scripts/script_pwc.js" type="text/javascript"></script>
-
+	<script src="../lib/d3.v4.3.0.js"></script>
+  	<script src="../lib/dimple.v2.3.0.min.js"></script>
+	<script src="../scripts/scatter.js" type="text/javascript"></script>
+	
+  	<script src="../scripts/pwc_satellite.js" type="text/javascript"></script>
+ 
    </body>
 </html>
 

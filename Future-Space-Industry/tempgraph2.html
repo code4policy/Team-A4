@@ -1,0 +1,19 @@
+<html>
+<div id="chartContainer">
+  <script src="/lib/d3.v4.3.0.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+  <script type="text/javascript">
+    var svg = dimple.newSvg("#chartContainer", 590, 400);
+    d3.tsv("../data/pwc_satellite.tsv", function (data) {
+      data = dimple.filterData(data, "Source", "pwc")
+      var myChart = new dimple.chart(svg, data);
+      myChart.setBounds(60, 30, 505, 305);
+      var x = myChart.addCategoryAxis("x", "Year");
+      x.addOrderRule("Year");
+      myChart.addMeasureAxis("y", "Number of Launch");
+      var s = myChart.addSeries(null, dimple.plot.line);
+      myChart.draw();
+    });
+  </script>
+</div>
+</html>

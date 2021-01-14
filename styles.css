@@ -59,7 +59,7 @@ body {
 table{
   width: 100%;
   border-collapse: collapse;
-  font-size:150%;
+  font-size:15px;
 }
 
 table th{
@@ -85,6 +85,12 @@ table td{
   color: #1B191A;
   padding: 10px 0;
 }
+
+/* styles to line up tables vertically */
+.box{
+  display: inline-block;
+}
+
 
 
 /* styles visited and unvisited link */
