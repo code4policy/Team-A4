@@ -6,8 +6,8 @@ var svg = dimple.newSvg(cssSelector, 590, 400);
         myChart.setBounds(60, 30, 505, 305)
         var x = myChart.addCategoryAxis("x", "Year");
         x.addOrderRule("Year");
-        myChart.addMeasureAxis("y", "Cost");
-        myChart.addSeries("Channel", dimple.plot.bubble);
+        myChart.addMeasureAxis("y", "Cost per Launch");
+        myChart.addSeries("Size", dimple.plot.bubble);
         myChart.addLegend(180, 10, 360, 20, "right");
         myChart.draw();
       });
