@@ -7,9 +7,23 @@ d3.tsv("/data/ms_prediction.tsv", function (data) {
   myChart.setBounds(60, 30, 505, 305);
   var x = myChart.addCategoryAxis("x", "Year");
   x.addOrderRule("Year");
-  myChart.addMeasureAxis("y", "Size of Space Industry");
+  // change font size of x-axis
+  x.fontSize = "12";
+  // add y-axis and change font size
+  var y = myChart.addMeasureAxis("y", "Size of Space Industry");
+  y.fontSize = "12";
   myChart.addSeries("Source", dimple.plot.line);
-  myChart.addLegend(60, 10, 500, 20, "right");
+  // add legend and change font size
+  var myLegend = myChart.addLegend(60, 10, 500, 20, "right");
+  myLegend.fontSize = "12";
+  // change default color
+  myChart.defaultColors = [
+    new dimple.color("lightpink"),
+    new dimple.color("red"),
+    new dimple.color("lightpink"),
+    new dimple.color("skyblue"),
+  ]; 
+  myChart.lineMarkers = true;
   myChart.draw();
 });
 };

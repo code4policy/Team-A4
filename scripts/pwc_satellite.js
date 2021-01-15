@@ -7,7 +7,11 @@ d3.tsv("../data/pwc_satellite.tsv", function (data) {
   myChart.setBounds(60, 30, 505, 305);
   var x = myChart.addCategoryAxis("x", "Year");
   x.addOrderRule("Year");
-  myChart.addMeasureAxis("y", "Number of Launch");
+  // change font size of x-axis
+  x.fontSize = "12";
+  // add y-axis and change font size
+  var y = myChart.addMeasureAxis("y", "Number of Launch");
+  y.fontSize = "12";
   var s = myChart.addSeries(null, dimple.plot.line);
   myChart.draw();
 });
