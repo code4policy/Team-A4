@@ -47,19 +47,19 @@ d3.csv("../data/launch_by_country_1969.csv", function(data) {
           .padRadius(innerRadius))
       .on("mouseover", function(){
         d3.select(this)
-            .attr("style", "fill:#F6A434");
+            .attr("style", "fill:#00FFFF");   // alter highlight color 
           })
       .on("mouseout", function(){
         d3.select(this)
-            .attr("style", "#69b3a2");
+            .attr("style", "#696969");
           });
 
-  // Add title
+  // Add title - altered text decoration and font to make graphs more coherent with rest
   svg.append("text")
         .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-        .text("CY1957-1969");
+        .style("font-size", "20px") 
+        .style("text-decoration", "none")  
+        .text("1957-1969");
 
 
   // Add the labels
@@ -129,19 +129,19 @@ d3.csv("../data/launch_by_country_1970.csv", function(data) {
           .padRadius(innerRadius))
       .on("mouseover", function(){
         d3.select(this)
-            .attr("style", "fill:#F6A434");
+            .attr("style", "fill:#00FFFF");   // alter highlight color 
           })
       .on("mouseout", function(){
         d3.select(this)
             .attr("style", "#5E6264");
           });
 
-  // Add title
+  // Add title - altered text decoration and font to make graphs more coherent with rest
   svg.append("text")
         .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-        .text("CY1970-1974");
+        .style("font-size", "20px") 
+        .style("text-decoration", "none")  
+        .text("1970-1974");
 
   // Add the labels
   svg.append("g")
@@ -209,19 +209,19 @@ d3.csv("../data/launch_by_country_1975.csv", function(data) {
           .padRadius(innerRadius))
       .on("mouseover", function(){
         d3.select(this)
-            .attr("style", "fill:#F6A434");
+            .attr("style", "fill:#00FFFF");   // alter highlight color 
           })
       .on("mouseout", function(){
         d3.select(this)
-            .attr("style", "#24246C");
+            .attr("style", "#191970");
           });
 
-  // Add title
+  // Add title - altered text decoration and font to make graphs more coherent with rest
   svg.append("text")
         .attr("text-anchor", "middle")  
-        .style("font-size", "16px") 
-        .style("text-decoration", "underline")  
-        .text("CY1975-2020");
+        .style("font-size", "20px") 
+        .style("text-decoration", "none")  
+        .text("1975-2020");
 
   // Add the labels
   svg.append("g")
