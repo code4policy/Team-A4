@@ -1,0 +1,1 @@
+All data presented is accessible at the link available on the graph. It was transcribed manually in .csv files.

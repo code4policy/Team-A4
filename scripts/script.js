@@ -1,4 +1,4 @@
-function drawLineChart(cssSelector){
+function drawLineChart(cssSelector, datafile){
 
 var margin = {top: 20, right: 50, bottom: 30, left: 50},
     width = 800 - margin.left - margin.right,
@@ -33,7 +33,7 @@ var svg = d3.select(cssSelector).append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("data/emerging_space_companies.tsv", function(error, data) {
+d3.tsv(datafile, function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
@@ -99,27 +99,5 @@ d3.tsv("data/emerging_space_companies.tsv", function(error, data) {
 })
 };
 
-drawLineChart('#emerging_space_companies');
-
-
-/* Table */
-
-/* Phase1 */
-d3.text("data/Phase1.csv", function(data) {
-    var parsedCSV = d3.csv.parseRows(data);
-
-    var container = d3.select('#phase1')
-        .append("table")
-
-        .selectAll("tr")
-            .data(parsedCSV).enter()
-            .append("tr")
-
-        .selectAll("td")
-            .data(function(d) { return d; }).enter()
-            .append("td")
-            .text(function(d) { return d; });
-});
-
-
-
+drawLineChart('#emerging_space_companies', '../data/emerging_space_companies.tsv');
+drawLineChart('#pwc_satellite', '../data/pwc_satellite.tsv');
