@@ -61,8 +61,7 @@ d3.csv("../data/launch_by_country_1969.csv", function(data) {
         .style("text-decoration", "none")  
         .text("1957-1969");
 
-
-  // Add the labels
+  // Add the labels (manipulate here to add value)
   svg.append("g")
       .selectAll("g")
       .data(data)
@@ -71,7 +70,7 @@ d3.csv("../data/launch_by_country_1969.csv", function(data) {
         .attr("text-anchor", function(d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
         .attr("transform", function(d) { return "rotate(" + ((x(d.Country) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(d['Value'])+10) + ",0)"; })
       .append("text")
-        .text(function(d){return(d.Country)})
+        .text(function(d){return(d.Country) + " (" +(d.Value)+ ")"}) // add value here
         .attr("transform", function(d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
         .style("font-size", "11px")
         .attr("alignment-baseline", "middle")
@@ -152,7 +151,7 @@ d3.csv("../data/launch_by_country_1970.csv", function(data) {
         .attr("text-anchor", function(d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
         .attr("transform", function(d) { return "rotate(" + ((x(d.Country) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(d['Value'])+10) + ",0)"; })
       .append("text")
-        .text(function(d){return(d.Country)})
+        .text(function(d){return(d.Country)  + " (" +(d.Value)+ ")"}) // add value here
         .attr("transform", function(d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
         .style("font-size", "11px")
         .attr("alignment-baseline", "middle")
@@ -232,7 +231,7 @@ d3.csv("../data/launch_by_country_1975.csv", function(data) {
         .attr("text-anchor", function(d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "end" : "start"; })
         .attr("transform", function(d) { return "rotate(" + ((x(d.Country) + x.bandwidth() / 2) * 180 / Math.PI - 90) + ")"+"translate(" + (y(d['Value'])+10) + ",0)"; })
       .append("text")
-        .text(function(d){return(d.Country)})
+        .text(function(d){return(d.Country)  + " (" +(d.Value)+ ")"}) // add value here
         .attr("transform", function(d) { return (x(d.Country) + x.bandwidth() / 2 + Math.PI) % (2 * Math.PI) < Math.PI ? "rotate(180)" : "rotate(0)"; })
         .style("font-size", "11px")
         .attr("alignment-baseline", "middle")
