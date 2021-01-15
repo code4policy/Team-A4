@@ -1,7 +1,7 @@
 function drawLinedChart(cssSelector){
 
 var svg = dimple.newSvg(cssSelector, 590, 400);
-d3.tsv("/data/ms_prediction.tsv", function (data) {
+d3.tsv("../data/ms_prediction.tsv", function (data) {
   data = dimple.filterData(data, "Source", ["MS - Main case", "MS - Bull case", "MS - Bear case", "BOFA"])
   var myChart = new dimple.chart(svg, data);
   myChart.setBounds(60, 30, 505, 305);
@@ -23,7 +23,6 @@ d3.tsv("/data/ms_prediction.tsv", function (data) {
     new dimple.color("lightpink"),
     new dimple.color("skyblue"),
   ]; 
-  myChart.lineMarkers = true;
   myChart.draw();
 });
 };
