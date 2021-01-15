@@ -230,3 +230,16 @@ body, .sectionintro, .issueintro, .issuetext, .graphintro, .sectionoutro{
   fill: none;
   stroke: black;
 }
+
+
+/* styles for graphtitles - note: used same styles as datawrapper uses to ensure consistency*/
+.graphtitle {
+  font-family:roboto;
+  font-size: 18px;
+  font-weight: bold;}
+
+
+.graphsubtitle {
+  font-family:roboto;
+  font-size: 16px;
+}
