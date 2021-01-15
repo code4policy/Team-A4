@@ -7,7 +7,7 @@ var svg = dimple.newSvg(cssSelector, 590, 400);
       myChart.setBounds(60, 30, 505, 305);
       var x = myChart.addCategoryAxis("x", "Year");
       x.addOrderRule("Year");
-      myChart.addMeasureAxis("y", "Number of Launch");
+      myChart.addMeasureAxis("y", "Number of Launches");
       var s = myChart.addSeries(null, dimple.plot.line);
       myChart.draw();
     });
