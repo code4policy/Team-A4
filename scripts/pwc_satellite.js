@@ -11,7 +11,7 @@ d3.tsv("../data/pwc_satellite.tsv", function (data) {
   // change font size of x-axis
   x.fontSize = "12";
   // add y-axis and change font size
-  var y = myChart.addMeasureAxis("y", "Number of Launch");
+  var y = myChart.addMeasureAxis("y", "Number of Launches");
   y.fontSize = "12";
   var s = myChart.addSeries(null, dimple.plot.line);
   myChart.draw();
