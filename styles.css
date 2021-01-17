@@ -250,3 +250,9 @@ body, .sectionintro, .issueintro, .issuetext, .graphintro, .sectionoutro{
   margin-right: auto;
   width: 40%;
 }
+
+.graphnote {
+  font-family:Arial;
+  font-size: 8.5px;
+  color: darkgrey;
+}
