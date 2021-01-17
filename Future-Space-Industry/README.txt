@@ -1,0 +1,3 @@
+- All data presented is accessible at the link available on the graph. It was transcribed manually in .csv file (unless noted otherwise)
+- Graph internet penetration: Data was already in a CSV file and was thus only selected for two years to illustrate point
+- Graph public spending: Again only data selection is shown to  illustrate points
